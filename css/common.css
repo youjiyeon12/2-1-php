@@ -1,0 +1,141 @@
+/* 마진과 패딩 초기화 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* 박스 모델 설정 */
+}
+
+/* 페이지 기본 글꼴과 크기 설정 */
+body {
+    font-family: "돋움", sans-serif; /* 기본 글꼴과 대체 글꼴 설정 */
+    font-size: 14px; /* 기본 글자 크기 설정 */
+    background-color: #f5f5f5; /* 배경색 추가 */
+    color: #333; /* 기본 텍스트 색상 */
+}
+
+img {
+    border: 0; /* 이미지 테두리 제거 */
+}
+
+ul {
+    list-style-type: none; /* 리스트 스타일 제거 */
+}
+
+a {
+    display: inline-block; /* 인라인 블록으로 표시 */
+    text-decoration: none; /* 텍스트 장식 제거 */
+}
+
+a:link, a:hover, a:visited, a:active {
+    text-decoration: none; /* 모든 상태의 텍스트 장식 제거 */
+    color: #222222; /* 모든 상태의 텍스트 색상 설정 */
+}
+
+/* 상단 헤더 */
+#top {
+    position: relative; /* 부모 요소를 기준으로 상대 위치 */
+    width: 1000px; /* 너비 1000px */
+    height: 80px; /* 높이 80px */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+#top h3 {
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 */
+    top: 10px; /* 상단에서 10px */
+    left: 40px; /* 왼쪽에서 40px */
+    font-size: 30px; /* 글자 크기 30px */
+    font-family: 'Arial Black', sans-serif; /* 글꼴 변경 */
+    color: #fff; /* 텍스트 색상 흰색 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* 텍스트 그림자 추가 */
+}
+
+#top #top_menu {
+    float: right; /* 오른쪽으로 플로팅 */
+    margin: 30px 60px 0 0; /* 상단 30px, 우측 60px 마진 */
+}
+
+#top #top_menu li {
+    display: inline; /* 인라인으로 표시 */
+}
+
+/* 메뉴 바 설정 */
+#menu_bar {
+    height: 48px; /* 높이 48px */
+    background-color: #443e58; /* 배경색 설정 */
+    font-size: 16px; /* 글자 크기 16px */
+    font-family: 'Roboto', sans-serif; /* 글씨체 변경 */
+}
+
+#menu_bar ul {
+    width: 1000px; /* 너비 1000px */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    padding: 14px 0 0 0; /* 상단 14px 패딩 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+#menu_bar li {
+    display: inline; /* 인라인으로 표시 */
+    margin: 0 45px; /* 좌우 마진 45px */
+    color: white; /* 글자 색상 흰색 */
+}
+
+#menu_bar a:link, #menu_bar a:hover, #menu_bar a:visited, #menu_bar a:active {
+    color: white; /* 모든 상태의 링크 색상 흰색 */
+}
+
+/* 메인 이미지 */
+#main_img_bar {
+    height: 400px; /* 높이 400px */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    background: linear-gradient(to right, #1a237e, #7e57c2, #6a1b9a, #4527a0, #0d47a1); /* 파랑, 연보라, 보라색 그라데이션 */
+}
+
+#main_img_bar img {
+    width: 100%; /* 이미지의 너비를 부모 요소의 너비에 맞게 조정 */
+    max-height: 100%; /* 이미지의 최대 높이를 부모 요소의 높이에 맞게 조정 */
+    max-width: 100%; /* 이미지의 최대 너비를 부모 요소의 너비에 맞게 조정 */
+}
+
+/* 하단 푸터 */
+footer {
+    height: 100px; /* 높이 100px */
+    background-color: #443e58; /* 배경색 설정 */
+    position: relative; /* 부모 요소를 기준으로 상대 위치 */
+    clear: both; /* 플로트 해제 */
+    margin-top: 50px; /* 상단 마진 50px */
+}
+
+#footer_content {
+    position: relative; /* 부모 요소를 기준으로 상대 위치 */
+    width: 1000px; /* 너비 1000px */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    color: #dddddd; /* 텍스트 색상 회색 */
+}
+
+#footer_logo {
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 */
+    top: 30px; /* 상단에서 30px */
+    left: 50px; /* 왼쪽에서 50px */
+    font-size: 16px; /* 글자 크기 16px */
+}
+
+#footer_logo span {
+    color: yellow; /* 텍스트 색상 노란색 */
+}
+
+#download {
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 */
+    top: 20px; /* 상단에서 20px */
+    left: 400px; /* 왼쪽에서 400px */
+}
+
+#author {
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 */
+    top: 20px; /* 상단에서 20px */
+    left: 700px; /* 왼쪽에서 700px */
+}
+
+/* 플로트 해제 클래스 */
+.clear {
+    clear: both; /* 양쪽 플로트 해제 */
+}

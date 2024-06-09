@@ -1,0 +1,57 @@
+/* 메인 콘텐트 */
+#main_content {
+    position: relative; /* 부모 요소를 기준으로 상대 위치 */
+    width: 1000px; /* 너비를 1000px로 설정 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    margin-bottom: 25px; /* 아래쪽 여백 25px */
+    text-align: center; /* 내용 가운데 정렬 */
+}
+
+/* 최신 글 영역 */
+#latest {
+    display: block; /* 블록 요소로 설정하여 줄바꿈 적용 */
+    margin: 50px auto 10px; /* 상단 여백 50px, 하단 여백 10px, 좌우 가운데 정렬 */
+    width: 100%; /* 너비를 100%로 설정 */
+    max-width: 1000px; /* 최대 너비를 1000px로 설정 */
+    text-align: center; /* 내용 가운데 정렬 */
+    border: 1px solid #ccc; /* 테두리 두께 1px, 색상 #ccc */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    padding: 20px; /* 내부 여백 20px */
+    background-color: #f9f9f9; /* 배경색을 #f9f9f9로 설정 */
+}
+
+#latest h4 { 
+    font-size: 28px; /* 글자 크기를 28px로 설정 */
+    padding-bottom: 10px; /* 하단 패딩 10px */
+    border-bottom: solid 2px #4D3E89; /* 하단 테두리 두께 2px, 색상 #4D3E89 */
+    color: #3A2F43; /* 제목 색상을 #3A2F43로 설정 */
+    font-weight: 600; /* 글자 두께를 600으로 설정 */
+    margin-bottom: 20px; /* 하단 여백 20px */
+}
+
+#latest ul { 
+    padding: 0; /* 패딩 제거 */
+    list-style-type: none; /* 목록 스타일을 없음으로 설정 */
+}
+
+#latest li { 
+    padding: 10px 0; /* 상하 패딩 10px */
+    border-bottom: solid 1px #dddddd; /* 하단 테두리 두께 1px, 색상 #dddddd */
+}
+
+#latest span { 
+    display: inline-block; /* 인라인 블록으로 표시 */
+    vertical-align: middle; /* 수직 가운데 정렬 */
+}
+
+#latest span:nth-child(1) { 
+    width: 50%; /* 첫 번째 자식 요소의 너비를 50%로 설정 */
+    color: #333; /* 텍스트 색상을 #333으로 설정 */
+    text-align: left; /* 왼쪽 정렬 */
+}
+
+#latest span:nth-child(2), #latest span:nth-child(3) { 
+    width: 20%; /* 두 번째, 세 번째 자식 요소의 너비를 20%로 설정 */
+    text-align: center; /* 가운데 정렬 */
+    color: #333; /* 텍스트 색상을 #333으로 설정 */
+}

@@ -1,0 +1,173 @@
+/* 쪽지 보내기 (message_form.php) */
+#message_box { 
+    position: relative; /* 상대 위치 설정 */
+    width: 800px; /* 너비 800px */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+#message_box h3 { 
+    margin-top: 30px; /* 상단 여백 30px */
+    padding: 10px; /* 패딩 10px */
+    border-bottom: solid 2px #516e7f; /* 하단 테두리 2px 실선, 색상 #516e7f */
+    font-size: 20px; /* 글자 크기 20px */
+}
+
+#write_msg { 
+    padding: 0 20px; /* 좌우 패딩 20px */
+}
+
+#write_msg span { 
+    display: inline-block; /* 인라인 블록 디스플레이 */
+}
+
+#write_msg .col1 { 
+    width: 150px; /* 너비 150px */
+}
+
+#write_msg li { 
+    padding: 12px; /* 패딩 12px */
+    border-bottom: solid 1px #dddddd; /* 하단 테두리 1px 실선, 색상 #dddddd */
+}
+
+#write_msg input { 
+    width: 500px; /* 너비 500px */
+    height: 25px; /* 높이 25px */
+}
+
+#write_msg textarea { 
+    width: 500px; /* 너비 500px */
+    height: 130px; /* 높이 130px */
+}
+
+#write_msg #text_area { 
+    position: relative; /* 상대 위치 설정 */
+    height: 158px; /* 높이 158px */
+}
+
+#write_msg #text_area .col1 { 
+    position: absolute; /* 절대 위치 설정 */
+    top: 10px; /* 상단 위치 10px */
+}
+
+#write_msg #text_area .col2 { 
+    position: absolute; /* 절대 위치 설정 */
+    left: 166px; /* 왼쪽 위치 166px */
+}
+
+#write_msg button { 
+    margin: 15px 0 30px 580px; /* 상단 여백 15px, 하단 여백 30px, 왼쪽 여백 580px */
+    padding: 5px 23px; /* 패딩: 상하 5px, 좌우 23px */
+    cursor: pointer; /* 커서 포인터 설정 */
+}
+
+/* 수신/송신 쪽지함 (message_form.php) */
+#message li { 
+    padding: 10px; /* 패딩 10px */
+    border-bottom: solid 1px #dddddd; /* 하단 테두리 1px 실선, 색상 #dddddd */
+}
+
+#message li:nth-child(1) { 
+    font-weight: bold; /* 글자 두껍게 */
+}
+
+#message span { 
+    display: inline-block; /* 인라인 블록 디스플레이 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+#message .title { 
+    font-weight: bold; /* 글자 두껍게 */
+}
+
+#message .col1 { 
+    width: 80px; /* 너비 80px */
+}
+
+#message .col2 { 
+    width: 410px; /* 너비 410px */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+#message .col3 { 
+    width: 120px; /* 너비 120px */
+}
+
+#message .col4 { 
+    width: 150px; /* 너비 150px */
+}
+
+#page_num { 
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin: 30px 0; /* 상하 여백 30px */
+}
+
+#page_num li { 
+    display: inline; /* 인라인 디스플레이 */
+}
+
+#message_box .top_buttons { 
+    text-align: right; /* 텍스트 오른쪽 정렬 */
+    margin: 20px 0 20px 0; /* 상하 여백 20px */
+}
+
+#message_box .top_buttons li { 
+    display: inline; /* 인라인 디스플레이 */
+    margin-right: 20px; /* 오른쪽 여백 20px */
+}
+
+#message_box .top_buttons a:link { 
+    text-decoration: underline; /* 밑줄 장식 */
+    color: green; /* 글자 색상 초록색 */
+}
+
+#message_box .top_buttons a:visited { 
+    text-decoration: underline; /* 밑줄 장식 */
+    color: green; /* 글자 색상 초록색 */
+}
+
+#message_box .buttons { 
+    text-align: right; /* 텍스트 오른쪽 정렬 */
+    margin: 20px 0 40px 0; /* 상단 여백 20px, 하단 여백 40px */
+}
+
+#message_box .buttons li { 
+    display: inline; /* 인라인 디스플레이 */
+}
+
+#message_box .buttons button { 
+    padding: 5px 10px; /* 패딩: 상하 5px, 좌우 10px */
+    cursor: pointer; /* 커서 포인터 설정 */
+}
+
+/* 쪽지함 보기 (view_msg.php) */
+#message_box { 
+    width: 800px; /* 너비 800px */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+#message_box .title { 
+    margin-top: 30px; /* 상단 여백 30px */
+    padding: 10px; /* 패딩 10px */
+    border-bottom: solid 2px #516e7f; /* 하단 테두리 2px 실선, 색상 #516e7f */
+    font-size: 20px; /* 글자 크기 20px */
+}
+
+#view_content li:nth-child(1) { 
+    padding: 15px; /* 패딩 15px */
+    border-bottom: solid 1px #aaaaaa; /* 하단 테두리 1px 실선, 색상 #aaaaaa */
+}
+
+#view_content .col2 { 
+    float: right; /* 오른쪽 정렬 */
+}
+
+#view_content li:nth-child(2) { 
+    padding: 15px 15px 80px 15px; /* 패딩: 상하 15px, 좌우 15px, 하단 여백 80px */
+    border-bottom: solid 1px #cccccc; /* 하단 테두리 1px 실선, 색상 #cccccc */
+}
+
+#view_content li:nth-child(3) button { 
+    padding: 5px 20px; /* 패딩: 상하 5px, 좌우 20px */
+    margin: 15px 0 40px 720px; /* 상단 여백 15px, 하단 여백 40px, 왼쪽 여백 720px */
+    cursor: pointer; /* 커서 포인터 설정 */
+}

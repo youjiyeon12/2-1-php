@@ -1,0 +1,121 @@
+/* 가입 양식 폼 */
+#join_box {
+    width: 800px; /* 너비를 800px로 설정 */
+    margin: 50px auto; /* 상단 여백 50px, 수평 가운데 정렬 */
+    padding: 20px; /* 내부 여백 20px */
+    background-color: #ffffff; /* 배경색을 흰색으로 설정 */
+    border: 1px solid #dddddd; /* 테두리 두께 1px, 색상 #dddddd */
+    border-radius: 8px; /* 모서리를 둥글게 설정 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가, 투명도 10% */
+}
+
+#join_box h2 {
+    margin-bottom: 20px; /* 하단 여백 20px */
+    padding-bottom: 10px; /* 하단 패딩 10px */
+    border-bottom: solid 1px #dddddd; /* 하단 테두리 두께 1px, 색상 #dddddd */
+    color: #333; /* 텍스트 색상 #333 */
+    font-size: 24px; /* 글자 크기 24px */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+#join_box .form {
+    margin-bottom: 15px; /* 하단 여백 15px */
+    display: flex; /* 플렉스박스 설정 */
+    align-items: center; /* 세로 가운데 정렬 */
+}
+
+#join_box .col1 {
+    width: 150px; /* 너비 150px */
+    font-weight: bold; /* 글자 굵게 설정 */
+    color: #555; /* 텍스트 색상 #555 */
+}
+
+#join_box .col2, #join_box .col3, #join_box .col4, #join_box .col5 {
+    flex: 1; /* 각 열이 동일하게 공간을 차지하도록 설정 */
+}
+
+#join_box .col2 input, 
+#join_box .col4 input[type="text"], 
+#join_box .col4 input[type="password"], 
+#join_box .col4 input[type="file"], 
+#join_box .col5 input {
+    width: 100%; /* 너비를 100%로 설정 */
+    padding: 8px; /* 내부 여백 8px */
+    border: 1px solid #ccc; /* 테두리 두께 1px, 색상 #ccc */
+    border-radius: 4px; /* 모서리를 둥글게 설정 */
+}
+
+#join_box .col4 label {
+    margin-right: 10px; /* 오른쪽 여백 10px */
+}
+
+#join_box textarea {
+    width: 100%; /* 너비를 100%로 설정 */
+    padding: 8px; /* 내부 여백 8px */
+    border: 1px solid #ccc; /* 테두리 두께 1px, 색상 #ccc */
+    border-radius: 4px; /* 모서리를 둥글게 설정 */
+    resize: vertical; /* 수직 크기 조정 가능 */
+}
+
+#join_box .buttons {
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    margin-top: 20px; /* 상단 여백 20px */
+}
+
+#join_box .buttons img {
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    margin: 0 10px; /* 좌우 여백 10px */
+}
+
+/* 인풋 필드 포커스 스타일 */
+#join_box input:focus, #join_box textarea:focus {
+    border-color: #2092aa; /* 포커스 시 테두리 색상 */
+    outline: none; /* 기본 아웃라인 제거 */
+}
+
+/* 하단 라인 */
+#join_box .bottom_line {
+    margin-top: 20px; /* 상단 여백 20px */
+    border-bottom: solid 1px #cccccc; /* 하단 테두리 두께 1px, 색상 #cccccc */
+}
+
+
+/*찜하기 목록*/
+#favorite_list {
+    width: 800px; /* 가로 너비 설정 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    padding: 20px; /* 내부 여백 설정 */
+    background-color: #fff; /* 배경색 설정 */
+    border: 1px solid #ddd; /* 테두리 설정 */
+    border-radius: 8px; /* 모서리 둥글게 설정 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 설정 */
+}
+
+#favorite_list h2 {
+    margin-bottom: 20px; /* 하단 여백 설정 */
+    padding-bottom: 10px; /* 하단 패딩 설정 */
+    border-bottom: 1px solid #ddd; /* 하단 테두리 설정 */
+    color: #333; /* 글자색 설정 */
+    font-size: 24px; /* 글자 크기 설정 */
+    text-align: center; /* 가운데 정렬 설정 */
+}
+
+#favorite_list ul {
+    list-style: none; /* 리스트 스타일 제거 */
+    padding: 0; /* 내부 여백 제거 */
+}
+
+#favorite_list ul li {
+    margin-bottom: 10px; /* 아이템 간격 설정 */
+    font-size: 16px; /* 글자 크기 설정 */
+    line-height: 1.6; /* 줄 간격 설정 */
+}
+
+#favorite_list ul li a {
+    color: #007bff; /* 링크 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+#favorite_list ul li a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
+}

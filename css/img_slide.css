@@ -1,0 +1,24 @@
+/* 이미지 슬라이더 */
+#slider {
+    width: 100%; /* 슬라이더의 너비를 부모 요소에 맞게 설정 */
+    height: 400px; /* 슬라이더의 높이를 400px로 설정 */
+    overflow: hidden; /* 슬라이더 영역을 넘는 콘텐츠 숨김 */
+    position: relative; /* 자식 요소를 절대 위치로 배치할 수 있도록 설정 */
+}
+
+.slide {
+    width: 100%; /* 슬라이드의 너비를 부모 요소에 맞게 설정 */
+    height: 100%; /* 슬라이드의 높이를 부모 요소에 맞게 설정 */
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 */
+    transition: transform 0.5s ease; /* 슬라이드 이동 시 변환 효과 설정 (0.5초) */
+    background-size: cover; /* 배경 이미지의 크기를 부모 요소에 맞게 조정 */
+    left: 0; /* 슬라이드의 왼쪽 위치를 0으로 설정 */
+}
+
+.slide img {
+    width: auto; /* 이미지의 너비를 자동으로 조정 */
+    height: 100%; /* 이미지의 높이를 부모 요소의 높이에 맞춤 */
+    max-width: 100%; /* 이미지의 최대 너비를 부모 요소에 맞게 제한 */
+    max-height: 400px; /* 이미지의 최대 높이를 400px로 제한 */
+    margin: 0 auto; /* 이미지를 수평으로 가운데 정렬 */
+}
